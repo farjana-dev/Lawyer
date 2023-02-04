@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-link{
+    color: #8d95b8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 91vh;
+    position: relative;
+}
+.banner h1{
+    text-align: center;
+    font-size: 86px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    }
+.icon{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffff;
+    top: 80%;
+    font-weight: 50px;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+.hg{
+    min-height: 91vh;
+    align-items: center;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+.who_we_are{
+    padding: 70px 0;
+    justify-content: space-between;
+}
+.who_we_are span{
+display: block;
+height: 3px;
+width: 70px;
+background-color: #f2622c;
+}
+.who_we_are h1{
+text-transform: uppercase;
+color: #072950;
+font-weight: 700;
+}
+.who_we_are p{
+    padding-top: 20px;
+    color: #b0b0b1;
+}
+.what_we_do{
+
+    background-color: #f7f8f8;
+    
+    padding: 60px 0;
+    background-image: url(../images/banner-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 53%;
+    }
+    .what_we_do span{
+    
+    background: #f2622c;
+    
+    display: block;
+    
+    height: 3px;
+    
+    width: 50px;
+    
+    margin: auto;
+    }
+    .what_we_do h1{
+    
+    text-transform: uppercase;
+    
+    color: #2b2f85;
+    
+    text-align: center;
+    
+    padding-top: 10px;
+    
+    font-weight: 700;
+    
+    padding-bottom: 70px;
+    }
+    .item{
+    
+    position: relative;
+    }
+    .item img{
+       width: 100%;
+    }
+    .item h1{
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%,-50%);
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 400;
+    opacity: 0;
+    transition: .5s all ease-in-out
+    }
+    .item i{
+        position: absolute;
+        left: 50%;
+        top: 80%; 
+       transform: translateX(-50%);
+       opacity: 0;
+       transition: .5s all ease-in-out
+    }
+    .item::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,28377e+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+        transition: .5s all ease-in-out;
+        opacity: 0;
+    }
+    .item:hover h1{
+        opacity: 1;
+        top: 50%;
+    }
+    .item:hover i{
+        opacity: 1;
+        left: 50%;
+    }
+    .item:hover::before{
+        height: 100%;
+        opacity: 1;
+    }
+    
+    .our_attorneys{
+        background-image: url(../images/banner-3.png);
+        padding: 15% 0;
+    }
+    .our_attorneys span{
+        display: block;
+        background-color: #f2622c;
+        height: 3px;
+        width: 50px;
+        align-items: center; 
+        margin-top: 80%;
+    }
+    .our_attorneys h1{
+
+        text-transform: uppercase;
+
+        color: #ffff;
+
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 30px;
+}
+    .our_attorneys p{
+
+        color: #929dcf;
+        margin-bottom: 30px;
+}
+.the_languages{
+      
+}
+.the_languages span{
+    background: #f2622c;
+    display: block;
+    height: 3px;
+    width: 50px;  
+    margin: auto;
+}
+.the_languages h1{
+    text-transform: uppercase;
+    color: #2b2f85;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700; 
+    padding-bottom: 70px;
+}
+.hd{
+    margin-top: 90px;
+}
+.ld{
+    padding-top: 20px;
+    padding-bottom: 20%;
+}
+.ld h1{
+
+text-transform: uppercase;
+
+text-align: inherit;
+
+padding-bottom: 20px;
+}
+.ld p{
+    
+color: #b1b0b1;
+}    
+.form{
+    background-image: url(../images/banner-3.png);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.form span{
+    background: #f2622c;
+    display: block;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+}
+.form h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffff;
+}
+.fl{   
+   text-transform: capitalize;    
+   text-align: end;
+   padding-top: 10%;
+}
+.fl h1{
+    
+    text-transform: capitalize;
+        
+    text-align: start;
+    }
+input{
+        width: -webkit-fill-available;
+        height: 2px;
+    }
+.bt{
+   align-items: center;
+}
+.bt a{
+    background: #f2622c;
+    width: 20%;
+    margin-top: 20px;
+}
+.footer{
+    background-color: #0c1234;
+    padding: 70px 70px;
+}
+.footer h1{
+    color: #616ca8;
+    margin: auto;
+    font-size: medium;
+    margin-left: 90px;
+}
+.icons{
+    
+}
+.icons ul{
+
+list-style: none;
+
+display: flex;
+
+}
+.icons ul li{
+
+margin-left: 20px;
+
+color: #ffff;
+
+margin-right: 20px;
+}
+
+
+
+
+
